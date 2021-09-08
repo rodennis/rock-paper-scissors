@@ -3,22 +3,21 @@ let pick = ["rock", "paper", "scissors"]
 function computerPlay() {
     let compChoice = pick[ Math.floor(Math.random() * pick.length) ]
     return compChoice
-}
-function playerSelection() {
+}     
+function playerSelection(){ 
     let playChoice = ("")
-}       
-    let playChoice = prompt("make a selection rock, paper, scissors?")
+}
 
-    if (playChoice === compChoice) {
+prompt("make a selection rock, paper, or scissors?")
+
+    if (playerSelection === computerPlay) {
         alert ("its a draw")
     }
-    else if (compChoice === "rock" && playChoice === "scissors" || compChoice === "scissors" && playChoice === "paper" || compChoice === "paper" && playChoice === "rock") {
+    else if (computerPlay === "rock" && playerSelection === "scissors" || computerPlay === "scissors" && playerSelection === "paper" || computerPlay === "paper" && playerSelection === "rock") {
         alert ("Computer has won!");
     }
-    else (playChoice === "rock" && compChoice === "scissors" || playChoice === "scissors" && compChoice === "paper" || playChoice === "paper" && compChoice === "rock"); {
+    else (playerSelection === "rock" && computerPlay === "scissors" || playerSelection === "scissors" && computerPlay === "paper" || playerSelection === "paper" && computerPlay === "rock"); {
         alert ("player has won!")
     }
-
-
 
     
