@@ -1,4 +1,3 @@
-
     let pick = ["rock", "paper", "scissors"]
     let result;
 
@@ -10,15 +9,28 @@
         let playChoice = ("")
     }       
         let playChoice = prompt("make a selection rock, paper, scissors?")
-    }
+
+    function playRound(playerSelection, computerPlay) {
+
         if (playerSelection() === computerPlay()) {
             alert ("its a draw")
         }
-        else if (computerPlay() === "rock" && playerSelection() === "scissors" || computerPlay() === "scissors" && playerSelection() === "paper" || computerPlay() === "paper" && playerSelection() === "rock") {
+        else if (
+            (computerPlay() === "rock" && playerSelection() === "scissors") || 
+            (computerPlay() === "scissors" && playerSelection() === "paper") || 
+            (computerPlay() === "paper" && playerSelection() === "rock")
+            )
+         {
             alert ("Computer has won!");
         }
-        else if (playerSelection() === "rock" && computerPlay() === "scissors" || playerSelection() === "scissors" && computerPlay() === "paper" || playerSelection() === "paper" && computerPlay() === "rock"); {
+        else if (
+            (playerSelection() === "rock" && computerPlay() === "scissors") || 
+            (playerSelection() === "scissors" && computerPlay() === "paper") || 
+            (playerSelection() === "paper" && computerPlay() === "rock")
+            ) 
+            {
             alert ("player has won!")
         }
+    }
        
     
