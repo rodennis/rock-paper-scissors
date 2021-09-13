@@ -17,12 +17,20 @@ function startRound() {
             alert("The person who is a computer won!")
             }
 
+    else if (playSelect != ["rock", "paper", "scissors"]) {
+        alert ("incorrect input!")
+    }
+
     else {
         alert("It's a draw!");
     }
 }
 
 startRound()
+
+
+
+
 
 
 
