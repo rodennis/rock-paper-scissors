@@ -1,33 +1,32 @@
 let pick = ["rock", "paper", "scissors"];
+let compChoice = pick[ Math.floor(Math.random() * pick.length)]
 
-function computerPlay() {
-    let compChoice = pick[ Math.floor(Math.random() * pick.length)]
-}
-
-function playerSelection() {
-    let playChoice = ["rock", "paper", "scissors"] 
-}
-
-prompt ("Choose your weapon rock, paper, or scissors?")
+let playSelect = window.prompt ("Choose your weapon rock, paper, or scissors?")
 
 function startRound() {
 
-    if (playerSelection() === playChoice[0] && computerPlay() === pick[2] || 
-        playerSelection() === playChoice[1] && computerPlay() === pick[0] ||
-        playerSelection() === playChoice[2] && computerPlay() === pick[1]) {
+    if (playSelect === "rock" && compChoice === "scissors" || 
+        playSelect === "scissors" && compChoice === "paper" ||
+        playSelect === "paper" && compChoice === "rock") {
         alert("The person who isn't a computer won!")
         }
 
-    else if (playerSelection() === playChoice[0] && computerPlay() === pick[1] || 
-            playerSelection() === playChoice[1] && computerPlay() === pick[2] ||
-            playerSelection() === playChoice[2] && computerPlay() === pick[0]) {
+    else if (playSelect === "rock" && compChoice === "paper" || 
+            playSelect === "scissors" && compChoice === "rock" ||
+            playSelect === "paper" && compChoice === "scissors") {
             alert("The person who is a computer won!")
             }
 
-    else (playerSelection() === computerPlay()) 
-        alert("It's a draw!")
+    else {
+        alert("It's a draw!");
+    }
 }
 
-// player gets prompted to enter rock, paper, or scissors and whatever you type in gets printed to the console and nothing else happens *//
+startRound()
+
+
+
+
+
 
     
