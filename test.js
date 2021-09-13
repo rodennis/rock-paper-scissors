@@ -30,4 +30,4 @@ function startRound() {
 
 // player gets prompted to enter rock, paper, or scissors and whatever you type in gets printed to the console and nothing else happens *//
 
-    
+
