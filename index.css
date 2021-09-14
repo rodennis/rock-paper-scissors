@@ -1,0 +1,43 @@
+.body { 
+    background-image: url(galactic.jpeg); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.main-game {
+    padding: 0px;
+}
+
+.choices {
+    padding-top: 100px ;
+}
+
+.title {
+    color: thistle;
+    font-size: 50px;
+    position: relative;
+    left: 500px;
+    top: 80px;
+}
+
+#rock {
+    background-color: transparent;
+    border-color: transparent;
+    padding-left: 200px;
+    
+}
+
+#paper {
+    background-color: transparent;
+    border-color: transparent;
+    padding-left: 110px;
+}
+
+#scissors {
+    background-color: transparent;
+    border-color: transparent;
+    float: right;
+    position: inherit;
+    padding-right: 170px;
+    padding-top: 10px;
+}
