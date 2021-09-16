@@ -6,23 +6,17 @@ let playSelect = ["rock", "paper", "scissors"]
 
 const btn0 = document.querySelector("#rock");
 btn0.addEventListener('click', () => {
-  if (playSelect === "rock") {
     startRound()
-  }
 })
 
   const btn1 = document.querySelector("#paper");
 btn1.addEventListener('click', () => {
-  if (playSelect === "paper") {
     startRound()
-  }
 })
   
   const btn2 = document.querySelector("#scissors");
 btn2.addEventListener('click', () => {
-  if (playSelect === "scissors") {
     startRound()
-  }
 })  
 
 function startRound() {
