@@ -1,59 +1,57 @@
-let pick = ["rock", "paper", "scissors"];
-let compChoice = pick[ Math.floor(Math.random() * pick.length)]
-let playSelect = ["rock", "paper", "scissors"]
+const rock = document.getElementById("rock");
+const paper = document.getElementById("paper");
+const scissors = document.getElementById("scissors");
 
-//let playSelect =  window.prompt("Choose your weapon rock, paper, or scissors?")//
+rock.addEventListener('click', () => {
+    let playSelect = "rock"
+    let pick = ["rock", "paper", "scissors"];
+    let compChoice = pick[ Math.floor(Math.random() * pick.length)]
 
-const btn0 = document.querySelector("#rock");
-btn0.addEventListener('click', () => {
-    startRound()
+    if (playSelect === "rock" && compChoice === "scissors") {
+        alert("Player has won this round!")
+    }
+ 
+    else if (playSelect === "rock" && compChoice === "paper") {
+        alert("Computer has won this round!")
+    }
+ 
+    else {
+        alert("It's a tie!")
+    }
 })
 
-  const btn1 = document.querySelector("#paper");
-btn1.addEventListener('click', () => {
-    startRound()
+paper.addEventListener('click', () => {
+    let playSelect = "paper"
+    let pick = ["rock", "paper", "scissors"];
+    let compChoice = pick[ Math.floor(Math.random() * pick.length)]
+
+    if (playSelect === "paper" && compChoice === "rock") {
+        alert("Player has won this round!")
+    }
+ 
+    else if (playSelect === "paper" && compChoice === "scissors") {
+        alert("Computer has won this round!")
+    }
+ 
+    else {
+        alert("It's a tie!")
+    }
 })
   
-  const btn2 = document.querySelector("#scissors");
-btn2.addEventListener('click', () => {
-    startRound()
-})  
+scissors.addEventListener('click', () => {
+    let playSelect = "scissors"
+    let pick = ["rock", "paper", "scissors"];
+    let compChoice = pick[ Math.floor(Math.random() * pick.length)]
 
-function startRound() {
-
-    if (playSelect === "rock" && compChoice === "scissors" || 
-        playSelect === "scissors" && compChoice === "paper" ||
-        playSelect === "paper" && compChoice === "rock") {
-        alert("The person who isn't a computer won!")
-        }
-
-    else if (playSelect === "rock" && compChoice === "paper" || 
-            playSelect === "scissors" && compChoice === "rock" ||
-            playSelect === "paper" && compChoice === "scissors") {
-            alert("The person who is a computer won!")
-            }
-
-    else if (playSelect != ["rock", "paper", "scissors"]) {
-        alert ("incorrect input!")
+    if (playSelect === "scissors" && compChoice === "paper") {
+        alert("Player has won this round!")
     }
-
+ 
+    else if (playSelect === "scissors" && compChoice === "rock") {
+        alert("Computer has won this round!")
+    }
+ 
     else {
-        alert("It's a draw!");
+        alert("It's a tie!")
     }
-}
-
-
-startRound()
-
-
-
-
-
-
-
-
-
-
-
-
-    
+})      
