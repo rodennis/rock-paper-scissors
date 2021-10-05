@@ -2,6 +2,8 @@ const rock = document.getElementById("rock");
 const paper = document.getElementById("paper");
 const scissors = document.getElementById("scissors");
 
+//event listener for rock//
+
 rock.addEventListener('click', () => {
     let playSelect = "rock"
     let pick = ["rock", "paper", "scissors"];
@@ -20,6 +22,8 @@ rock.addEventListener('click', () => {
     }
 })
 
+//event listener for paper//
+
 paper.addEventListener('click', () => {
     let playSelect = "paper"
     let pick = ["rock", "paper", "scissors"];
@@ -37,6 +41,8 @@ paper.addEventListener('click', () => {
         alert("It's a tie!")
     }
 })
+
+//event listener for scissors//
   
 scissors.addEventListener('click', () => {
     let playSelect = "scissors"
